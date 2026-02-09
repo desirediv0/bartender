@@ -1,24 +1,20 @@
-import Hero from '@/components/Hero';
-import Services from '@/components/Services';
-import About from '@/components/About';
-import WhyChoose from '@/components/WhyChoose';
-import EventTypes from '@/components/EventTypes';
-import Packages from '@/components/Packages';
-import Gallery from '@/components/Gallery';
-import CTASection from '@/components/CTASection';
+import PremiumHero from '@/components/PremiumHero'
+import PremiumServices from '@/components/PremiumServices'
+import PremiumAbout from '@/components/PremiumAbout'
+import PremiumGallery from '@/components/PremiumGallery'
+import WhyChoose from '@/components/WhyChoose'
+import PremiumCTA from '@/components/PremiumCTA'
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-brand-black text-white">
-
-      <Hero />
-      <About />
-      <Services />
+    <>
+      <PremiumHero />
+      <PremiumServices />
+      <PremiumAbout />
+      <PremiumGallery />
       <WhyChoose />
-      <EventTypes />
-      <Packages />
-      <Gallery />
-      <CTASection />
-    </main>
+      <PremiumCTA />
+
+    </>
   );
 }
