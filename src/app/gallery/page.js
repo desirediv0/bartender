@@ -1,6 +1,5 @@
 import PremiumCTA from '@/components/PremiumCTA';
 import PremiumGallery from '@/components/PremiumGallery';
-import { Instagram } from 'lucide-react';
 import PageHero from '@/components/PageHero';
 
 export const metadata = {

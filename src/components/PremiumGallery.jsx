@@ -9,14 +9,11 @@ export default function PremiumGallery() {
   const [selectedImage, setSelectedImage] = useState(null);
 
   const images = [
-    { src: '/premium-cocktails.jpg', alt: 'Premium cocktails setup', category: 'Cocktails' },
-    { src: '/bartender-event.jpg', alt: 'Event bartending service', category: 'Events' },
-    { src: '/molecular-bar.jpg', alt: 'Molecular mixology bar', category: 'Innovation' },
-    { src: '/corporate-event.jpg', alt: 'Corporate event service', category: 'Corporate' },
-    { src: '/premium-cocktails.jpg', alt: 'Craft cocktails', category: 'Cocktails' },
-    { src: '/bartender-event.jpg', alt: 'Wedding bar service', category: 'Weddings' },
-    { src: '/molecular-bar.jpg', alt: 'Advanced mixology', category: 'Innovation' },
-    { src: '/corporate-event.jpg', alt: 'Professional bartending', category: 'Professional' },
+    { src: '/gallery/premium-cocktails.jpg', alt: 'Premium cocktails setup', category: 'Cocktails' },
+    { src: '/gallery/bartender-event.jpg', alt: 'Event bartending service', category: 'Events' },
+    { src: '/gallery/molecular-bar.jpg', alt: 'Molecular mixology bar', category: 'Innovation' },
+    { src: '/gallery/corporate-event.jpg', alt: 'Corporate event service', category: 'Corporate' },
+    
   ];
 
   const nextImage = () => {

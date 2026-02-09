@@ -14,9 +14,10 @@ export default function PremiumAbout() {
   return (
     <section id="about" className="w-full bg-royal-purple text-white py-20 md:py-32">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
-        <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+
+        <div className="grid md:grid-cols-2 gap-12 md:gap-16">
           {/* Left: Content */}
-          <div className="order-2 md:order-1">
+          <div className="order-2 md:order-1 flex flex-col justify-center">
             <div className="flex items-center gap-3 mb-4">
               <div className="h-px w-8 bg-soft-gold"></div>
               <span className="text-xs font-body font-semibold tracking-widest text-soft-gold uppercase">
@@ -43,16 +44,16 @@ export default function PremiumAbout() {
               </p>
             </div>
 
-            <Link href="/about" className="inline-block px-8 py-3 border-2 border-soft-gold text-soft-gold font-heading font-bold uppercase tracking-wide hover:bg-soft-gold/10 transition-all duration-300">
+            <Link href="/about" className="inline-block px-8 py-3 border-2 border-soft-gold text-soft-gold font-heading font-bold uppercase tracking-wide hover:bg-soft-gold/10 transition-all duration-300 w-fit">
               Learn Our Story
             </Link>
           </div>
 
           {/* Right: Image */}
-          <div className="order-1 md:order-2 relative">
-            <div className="relative h-96 md:h-full overflow-hidden border border-soft-gold/30">
+          <div className="order-1 md:order-2 relative h-full min-h-[400px]">
+            <div className="relative h-96 md:h-full overflow-hidden border border-soft-gold/30 rounded-2xl">
               <Image
-                src="/bartender-event.jpg"
+                src="/team.jpg"
                 alt="Bartenders Club Delhi team"
                 fill
                 className="object-cover"
