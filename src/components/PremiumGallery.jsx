@@ -29,7 +29,7 @@ export default function PremiumGallery() {
   };
 
   return (
-    <section id="gallery" className="w-full bg-white py-20 md:py-32">
+    <section id="gallery" className="w-full bg-white py-12 md:py-14">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         {/* Section Header */}
         <div className="text-center mb-16 md:mb-24">

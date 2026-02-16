@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export default function PremiumCTA() {
   return (
-    <section id="contact" className="w-full bg-white py-12">
+    <section id="contact" className="w-full bg-white py-8">
       <div className="max-w-5xl mx-auto px-4 md:px-8">
         {/* Main CTA Card */}
         <div className="relative bg-gradient-to-br from-royal-purple via-royal-purple/95 to-royal-purple text-white p-12 md:p-16 border border-soft-gold/30">
@@ -22,7 +22,7 @@ export default function PremiumCTA() {
           </div>
 
           {/* Contact Methods */}
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="grid md:grid-cols-2 gap-6 mb-12">
             <a
               href="tel:9213368407"
               className="group flex items-center gap-4 p-6 bg-white/10 border border-soft-gold/20 hover:bg-white/20 hover:border-soft-gold/40 transition-all duration-300"

@@ -12,7 +12,7 @@ export default function PremiumAbout() {
   ];
 
   return (
-    <section id="about" className="w-full bg-royal-purple text-white py-20 md:py-32">
+    <section id="about" className="w-full bg-royal-purple text-white py-12 md:py-14">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
 
         <div className="grid md:grid-cols-2 gap-12 md:gap-16">

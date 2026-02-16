@@ -23,7 +23,7 @@ export default function WhyChoose() {
   ];
 
   return (
-    <section className="py-24 bg-white relative">
+    <section className="py-12 md:py-14 bg-white relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-5xl font-bold text-royal-purple mb-6 font-heading">

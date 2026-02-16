@@ -39,7 +39,7 @@ export default function ContactPage() {
                 bgImage="/contact.jpg"
             />
 
-            <section className="relative py-24 overflow-hidden">
+            <section className="relative py-12 md:py-14 overflow-hidden">
                 {/* Background Elements - Adjusted for light theme */}
                 <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-royal-purple/5 blur-[100px] rounded-full pointer-events-none"></div>
                 <div className="absolute bottom-0 left-0 w-1/3 h-1/3 bg-soft-gold/10 blur-[100px] rounded-full pointer-events-none"></div>

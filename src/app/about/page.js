@@ -16,7 +16,7 @@ export default function AboutPage() {
             />
 
             {/* Introduction */}
-            <section className="py-20 px-4 md:px-8 max-w-7xl mx-auto">
+            <section className="py-12 md:py-14 px-4 md:px-8 max-w-7xl mx-auto">
                 <motion.div
                     variants={staggerContainer}
                     initial="hidden"
@@ -71,7 +71,7 @@ export default function AboutPage() {
             </section>
 
             {/* Our Process - 3 P's */}
-            <section className="py-20 bg-gray-50 border-y border-black/5">
+            <section className="py-12 md:py-14 bg-gray-50 border-y border-black/5">
                 <div className="max-w-7xl mx-auto px-4 md:px-8 text-center">
                     <h3 className="font-heading text-3xl md:text-4xl font-bold mb-4 text-brand-black">Our Party Planning Process</h3>
                     <p className="text-brand-black/70 mb-16 max-w-2xl mx-auto">The Bartenders Club Delhi goes far beyond arriving early and staying late. Our creative process is based on three P&apos;s.</p>
@@ -85,7 +85,7 @@ export default function AboutPage() {
             </section>
 
             {/* Why Choose Us */}
-            <section className="py-20 px-4 md:px-8 max-w-7xl mx-auto">
+            <section className="py-12 md:py-14 px-4 md:px-8 max-w-7xl mx-auto">
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
                     <div>
                         <h3 className="font-heading text-3xl md:text-4xl font-bold mb-8 text-royal-purple">Why Choose Us</h3>
@@ -149,7 +149,7 @@ const ReasonItem = ({ title, description }) => (
         </div>
         <div>
             <h5 className="font-heading text-xl font-bold text-brand-black mb-2">{title}</h5>
-            <p className="text-brand-black/70 font-body leading-relaxed">{description}</p>
+            <p className="text-brand-black/70 font-body le ading-relaxed">{description}</p>
         </div>
     </div>
 );

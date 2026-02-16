@@ -1,6 +1,6 @@
 'use client';
 
-import { Martini, Sparkles, Wine, Zap, Flame, Music } from 'lucide-react';
+import { Martini, Sparkles, Wine, Zap, Flame } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -8,44 +8,38 @@ export default function PremiumServices() {
   const services = [
     {
       icon: Martini,
-      title: 'Bartender Staffing',
-      description: 'Professional, experienced mixologists and bartenders for your events. Our team brings expertise, style, and exceptional service to every occasion.',
-      image: '/bartender-staffing.jpg',
-    },
-    {
-      icon: Sparkles,
-      title: 'Signature Cocktails',
-      description: 'Customized cocktail menus created for your event theme. From classic cocktails to innovative creations, we design the perfect drink experience.',
-      image: '/signature-cocktails.jpg',
+      title: 'Bartenders (Indian & Foreign)',
+      description: 'Professional Indian and foreign bartenders to elevate your event. Our staff brings improved hospitality, style, and mixology expertise.',
+      image: '/bartenders.jpg',
     },
     {
       icon: Zap,
-      title: 'Molecular Mixology',
-      description: 'Trending molecular bar setup with liquid nitrogen cocktails. Add a spectacular "wow" factor to your event with cutting-edge mixology.',
-      image: '/molecular-mixology.jpg',
+      title: 'Molecular Bar Setup',
+      description: 'State-of-the-art molecular bar setups featuring liquid nitrogen, smoke, and foams. A theatrical cocktail experience that wows guests.',
+      image: '/molecular-bar-setup.jpg',
     },
     {
-      icon: Wine,
-      title: 'Premium Glassware',
-      description: 'Elegant glassware collection that elevates the drinking experience. From classic to contemporary, we have the perfect vessels for your cocktails.',
-      image: '/premium-glassware.jpg',
+      icon: Sparkles,
+      title: 'Mixologists',
+      description: 'Expert mixologists crafting bespoke signature cocktails. We blend flavors and techniques to create unique drink menus for your event.',
+      image: '/mixologists.jpg',
     },
     {
       icon: Flame,
-      title: 'Mixer Packages',
-      description: 'Complete mixer selection including sodas, juices, syrups, and garnishes. All components provided for seamless cocktail service.',
-      image: '/mixer-packages.jpg',
+      title: 'Flavour Hookah',
+      description: 'Premium flavour hookah catering with a wide range of exotic blends. Professional setup and service for a relaxing lounge experience.',
+      image: '/flavour-hookah.jpg',
     },
     {
-      icon: Music,
-      title: 'Hookah & Entertainment',
-      description: 'Premium hookah service and event entertainment options. Create an immersive, luxurious ambiance that guests will remember.',
-      image: '/hookah-entertainment.jpg',
+      icon: Wine,
+      title: 'Imported Glassware',
+      description: 'Luxury imported glassware rentals to serve your drinks in style. From crystal flutes to modern tumblers, we have the perfect vessel.',
+      image: '/imported-glassware.jpg',
     },
   ];
 
   return (
-    <section id="services" className="w-full bg-white py-20 md:py-32">
+    <section id="services" className="w-full bg-white py-12 md:py-14">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         {/* Section Header */}
         <div className="text-center mb-16 md:mb-24">

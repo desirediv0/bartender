@@ -8,10 +8,11 @@ export default function PremiumFooter() {
 
   const footerLinks = {
     services: [
-      { label: 'Bartender Staffing', href: '/services' },
-      { label: 'Signature Cocktails', href: '/services' },
-      { label: 'Molecular Mixology', href: '/services' },
-      { label: 'Event Planning', href: '/events' },
+      { label: 'Bartenders (Indian & Foreign)', href: '/services' },
+      { label: 'Molecular Bar Setup', href: '/services' },
+      { label: 'Mixologists', href: '/services' },
+      { label: 'Flavour Hookah', href: '/services' },
+      { label: 'Imported Glassware', href: '/services' },
     ],
     company: [
       { label: 'About Us', href: '/about' },
@@ -29,7 +30,7 @@ export default function PremiumFooter() {
   return (
     <footer className="bg-royal-purple text-white">
       {/* Main Footer Content */}
-      <div className="max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24">
+      <div className="max-w-7xl mx-auto px-4 md:px-8 py-12 md:py-14">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Brand Section */}
           <div className="lg:col-span-1">
@@ -138,10 +139,8 @@ export default function PremiumFooter() {
               © {currentYear} Bartenders Club Delhi. All rights reserved.
             </p>
 
-            {/* Badge */}
-            <div className="text-right text-xs text-white/60 font-body">
-              Crafted with <span className="text-soft-gold">★</span> for premium events
-            </div>
+        
+           
           </div>
         </div>
       </div>
