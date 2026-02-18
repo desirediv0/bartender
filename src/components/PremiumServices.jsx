@@ -1,6 +1,6 @@
 'use client';
 
-import { Martini, Sparkles, Wine, Zap, Flame } from 'lucide-react';
+import { Martini, Sparkles, Wine, Zap, Flame, Package } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -8,33 +8,40 @@ export default function PremiumServices() {
   const services = [
     {
       icon: Martini,
-      title: 'Bartenders (Indian & Foreign)',
-      description: 'Professional Indian and foreign bartenders to elevate your event. Our staff brings improved hospitality, style, and mixology expertise.',
-      image: '/bartenders.jpg',
+      title: 'Professional Bartenders & Mixologists',
+      description: 'Experienced Indian and foreign bartenders and mixologists. We provide improved hospitality, style, and expert drink crafting for your events.',
+      image: '/bartenders.png',
     },
     {
       icon: Zap,
-      title: 'Molecular Bar Setup',
-      description: 'State-of-the-art molecular bar setups featuring liquid nitrogen, smoke, and foams. A theatrical cocktail experience that wows guests.',
-      image: '/molecular-bar-setup.jpg',
+      title: 'Molecular Mixology',
+      description: 'Advanced molecular bar setups with liquid nitrogen, smoke, and foams. A theatrical and scientific approach to cocktail making.',
+      image: '/molecular-mixology.png',
+      href: '/services/molecular-mixology',
     },
     {
       icon: Sparkles,
-      title: 'Mixologists',
-      description: 'Expert mixologists crafting bespoke signature cocktails. We blend flavors and techniques to create unique drink menus for your event.',
-      image: '/mixologists.jpg',
-    },
-    {
-      icon: Flame,
-      title: 'Flavour Hookah',
-      description: 'Premium flavour hookah catering with a wide range of exotic blends. Professional setup and service for a relaxing lounge experience.',
-      image: '/flavour-hookah.jpg',
+      title: 'Bar Setup & Props',
+      description: 'Complete bar setup services including thematic props, counters, and decor to create the perfect ambiance for your party.',
+      image: '/bar-setup.png',
     },
     {
       icon: Wine,
       title: 'Imported Glassware',
-      description: 'Luxury imported glassware rentals to serve your drinks in style. From crystal flutes to modern tumblers, we have the perfect vessel.',
-      image: '/imported-glassware.jpg',
+      description: 'Wide range of luxury imported glassware. From crystal flutes to modern tumblers, we have the perfect vessel.',
+      image: '/imported-glassware.png',
+    },
+    {
+      icon: Flame,
+      title: 'Hookah on Rent / Flavoured',
+      description: 'Premium hookah catering with a variety of exotic flavors. Professional setup for a relaxing and luxurious experience.',
+      image: '/hookah.png',
+    },
+    {
+      icon: Package,
+      title: 'Complete Bar Solutions',
+      description: 'End-to-end service including beverages, mixers, ingredients, and customized menus. We handle everything so you can enjoy your event.',
+      image: '/bar-solutions.png',
     },
   ];
 
@@ -62,10 +69,14 @@ export default function PremiumServices() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
           {services.map((service, index) => {
             const Icon = service.icon;
+            const Wrapper = service.href ? Link : 'div';
+            const props = service.href ? { href: service.href } : {};
+
             return (
-              <div
+              <Wrapper
                 key={index}
-                className="group relative bg-white border border-soft-gold/20 overflow-hidden hover:shadow-lg transition-all duration-300"
+                {...props}
+                className="group relative bg-white border border-soft-gold/20 overflow-hidden hover:shadow-lg transition-all duration-300 block"
               >
                 {/* Image */}
                 <div className="relative h-56 overflow-hidden">
@@ -97,7 +108,7 @@ export default function PremiumServices() {
 
                 {/* Accent Line */}
                 <div className="absolute top-0 left-0 h-1 bg-soft-gold group-hover:left-full transition-all duration-500"></div>
-              </div>
+              </Wrapper>
             );
           })}
         </div>

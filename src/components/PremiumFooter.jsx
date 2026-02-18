@@ -8,11 +8,12 @@ export default function PremiumFooter() {
 
   const footerLinks = {
     services: [
-      { label: 'Bartenders (Indian & Foreign)', href: '/services' },
-      { label: 'Molecular Bar Setup', href: '/services' },
-      { label: 'Mixologists', href: '/services' },
-      { label: 'Flavour Hookah', href: '/services' },
+      { label: 'Pro Bartenders & Mixologists', href: '/services' },
+      { label: 'Molecular Mixology', href: '/services/molecular-mixology' },
+      { label: 'Bar Setup & Props', href: '/services' },
       { label: 'Imported Glassware', href: '/services' },
+      { label: 'Hookah on Rent / Flavoured', href: '/services' },
+      { label: 'Complete Bar Solutions', href: '/services' },
     ],
     company: [
       { label: 'About Us', href: '/about' },
