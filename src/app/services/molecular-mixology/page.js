@@ -65,7 +65,7 @@ export default function MolecularMixologyPage() {
                             Molecular mixology is an advanced, science-driven approach to bartending that uses culinary techniques and additives to transform the texture, flavor, and appearance of cocktails. It applies principles from molecular gastronomy to create innovative, multisensory drinking experiences.
                         </p>
                         <p className="text-white/80 font-body leading-relaxed">
-                            At <strong className="text-soft-gold">Bartenders Club Delhi</strong>, we experiment and create amazing cocktails with artistic presentation, textures, aromas, and flavors. It is the hottest trend this season, adding that extra "wow" factor to your bar.
+                            At <strong className="text-soft-gold">Bartenders Club Delhi</strong>, we experiment and create amazing cocktails with artistic presentation, textures, aromas, and flavors. It is the hottest trend this season, adding that extra &quot;wow&quot; factor to your bar.
                         </p>
                     </div>
                     <div className="relative h-[400px] w-full rounded-lg overflow-hidden border border-soft-gold/20 shadow-2xl">
