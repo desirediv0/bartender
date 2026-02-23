@@ -8,6 +8,7 @@ import PageHero from '@/components/PageHero';
 export default function ContactPage() {
     const [formData, setFormData] = useState({
         name: '',
+        email: '',
         phone: '',
         eventType: 'Wedding',
         message: ''
@@ -22,13 +23,27 @@ export default function ContactPage() {
         e.preventDefault();
         setLoading(true);
 
-        // Simulate network request
-        await new Promise(resolve => setTimeout(resolve, 2000));
+        try {
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
 
-        console.log('Form Data Submitted:', formData);
-        setLoading(false);
-        alert("Inquiry Sent! We'll stay in touch.");
-        setFormData({ name: '', phone: '', eventType: 'Wedding', message: '' });
+            if (response.ok) {
+                alert("Inquiry Sent! We'll stay in touch.");
+                setFormData({ name: '', email: '', phone: '', eventType: 'Wedding', message: '' });
+            } else {
+                alert("Failed to send inquiry. Please try again.");
+            }
+        } catch (error) {
+            console.error("Submission error:", error);
+            alert("Something went wrong. Please try again later.");
+        } finally {
+            setLoading(false);
+        }
     };
 
     return (
@@ -103,6 +118,15 @@ export default function ContactPage() {
                                         value={formData.name}
                                         onChange={handleChange}
                                         placeholder="Your Name"
+                                        required
+                                    />
+                                    <InputField
+                                        label="Email"
+                                        name="email"
+                                        type="email"
+                                        value={formData.email}
+                                        onChange={handleChange}
+                                        placeholder="Your Email Address"
                                         required
                                     />
                                     <InputField
